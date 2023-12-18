@@ -22,7 +22,7 @@ class SB:
         """
         if driver is None:
             options = webdriver.ChromeOptions()
-            options.add_argument('--start-maximized')
+            options.add_argument('--headless')
             self.driver = webdriver.Chrome(options=options)
         else:
             self.driver = driver
